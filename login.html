@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="tr" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+	<title>Online Çekiliş Yap - Giriş</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="refresh" content="600">
+	<meta name="CLASSIFICATION" content="Online Çekiliş Yap - Giriş">
+	<meta name="ROBOTS" content="INDEX, FOLLOW">
+  	<meta name="author" content="">
+  <!-- Favicon icon -->
+  <link rel="apple-touch-icon" href="https://i.imgyukle.com/2021/06/15/O09pLc.png">
+  <link rel="icon" href="https://i.imgyukle.com/2021/06/15/O09pLc.png">
+<!-- Bootstrap Core CSS -->
+  <link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- page css -->
+  <link href="frontend/view/theme/onlinecekilisyap/assets/css/pages/login-register-lock.css" rel="stylesheet">
+	<link href="/frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+	<!-- This page CSS -->
+	<!-- chartist CSS -->
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/chartist-js/dist/chartist.min.css" rel="stylesheet">
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/morrisjs/morris.css" rel="stylesheet">
+	<!-- Vector CSS -->
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+	<!--c3 CSS -->
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/c3-master/c3.min.css" rel="stylesheet">
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
+	<!-- Dashboard 1 Page CSS -->
+	<link href="frontend/view/theme/onlinecekilisyap/assets/css/pages/dashboard2.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="frontend/view/theme/onlinecekilisyap/assets/css/style.css?v=1" rel="stylesheet">
+
+  <!-- You can change the theme colors from here -->
+	<link href="frontend/view/theme/onlinecekilisyap/assets/css/colors/blue-dark.css" id="theme" rel="stylesheet">
+ 	<link href="frontend/view/theme/onlinecekilisyap/assets/css/pages/widget-page.css" rel="stylesheet">
+  <link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/css-chart/css-chart.css" rel="stylesheet">
+	<link href="frontend/view/theme/onlinecekilisyap/assets/css/pages/pricing-page.css" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="gtag/js.js?id=UA-34906611-20"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-34906611-20');
+		gtag('config', 'AW-875000958');
+	</script>
+
+	<script>
+			</script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+
+<body class="card-no-border">
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <section id="wrapper">
+        <div class="login-register" style="background-image:url(frontend/view/theme/onlinecekilisyap/assets/design_files/images/background/login-register.jpg);">
+            <form class="uk-form form-horizontal" action="login" method="post" enctype="multipart/form-data">
+			<div class="login-box card">
+                <div class="card-body">
+                    <h3 class="box-title text-center m-t-20">Sistemimiz bakıma alınmıştır.</h3>
+                    <p class="box-content text-center">Lütfen bir süre sonra tekrar deneyin.</p>
+                </div>
+            </div>
+			</form>
+        </div>
+    </section>
+
+  
+  <div id="responsive-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Çekilişe Başla!</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+					<form class="card-no-border">
+						<div class="form-group card new_insta_form_card">
+							<h3 class="control-label cart-title">Instagram Gönderi Adresi:</h3>
+							<label for="message-text" class="control-label card-subtitle">
+  							- Profiliniz gizli olmamalıdır.<br>
+  							- Gönderi yoruma kapalı olmamalıdır.<br>
+                - Gönderi adresinizin doğru olduğundan emin olun.
+              </label>
+
+							<input class="form-control" id="insta_url" placeholder="Örn. https://www.instagram.com/p/BspYGothx1n/">
+						</div>
+						<div class="button-group m-b-40">
+							<div class="pull-left insta_message"></div>
+							<button type="button" class="btn waves-effect pull-right waves-light btn-lg btn-primary get_comments">Yorumları Çek</button>
+							<div class="pull-right insta_message1"></div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+  <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/bootstrap/js/popper.min.js"></script>
+    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/bootstrap/js/bootstrap.min.js"></script>
+	<!-- slimscrollbar scrollbar JavaScript -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/ps/perfect-scrollbar.jquery.min.js"></script>
+	    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/toast-master/js/jquery.toast.js"></script>
+    <!--Wave Effects -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/js/custom.min.js"></script>
+	<script src="frontend/view/theme/onlinecekilisyap/assets/js/mask.js"></script>
+	<script src="frontend/view/theme/onlinecekilisyap/assets/js/validation.js"></script>
+
+	<!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+
+      <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/datatables/jquery.dataTables.min.js"></script>
+    <!-- start - This is for export functionality only -->
+    <script src="buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="buttons/1.2.2/js/buttons.print.min.js"></script>
+
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/styleswitcher/jQuery.style.switcher.js"></script>
+
+
+
+
+
+    <!--Custom JavaScript -->
+    <script type="text/javascript">
+        $(function() {
+            $(".preloader").fadeOut();
+        });
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+
+		$( document ).ready(function() {
+
+			
+			$('.start_hide').show();
+
+			$('.btn_filtrele').on("click", function() {
+				$('.start_hide').show();
+				$('.make_cekilis').addClass('invisible');
+				$('.winner_div').removeClass('has-danger');
+				$('.filtre_message').removeClass('alert alert-danger');
+
+				var winner = $('#winner').val();
+				var mention = $('#mention').val();
+				var hashtag = $('#hashtag').val();
+				var replacement = $('#replacement').val();
+				var tekrar = $('#tekrar').val();
+				var metin = $('#metin').val();
+				if(winner!=''){
+					$.ajax({
+						url: './index.php?page=dashboard/footer/makeInstagramFilter',
+						type:'post',
+						data:{'winner':winner,'mention':mention,'hashtag':hashtag,'replacement':replacement,'tekrar':tekrar,'metin':metin,'instagram_id':0},
+						dataType: "json",
+						beforeSend:function(){
+							$('.filtre_message').html('<span class="right-side-toggle "><i class="ti-reload text-dark"></i></span>');
+						},
+						success: function(json) {
+							$('.filtre_message').html('');
+							if(json['error']!=''){
+								$('.filtre_message').addClass('alert alert-danger');
+								$('.filtre_message').html(json['error']);
+							}
+							else{
+								$('.make_cekilis').removeClass('invisible');
+								$('.filtre_message').addClass('alert alert-success');
+								$('.filtre_message').html(json['message']);
+							}
+
+						},
+						error: function(xhr, ajaxOptions, thrownError) {}
+					});
+				}
+				else{
+					$('.winner_div').addClass('has-danger');
+				}
+			});
+
+
+
+      $('.make_cekilis').on("click", function() {
+
+				var winner = $('#winner').val();
+				var mention = $('#mention').val();
+				var hashtag = $('#hashtag').val();
+				var replacement = $('#replacement').val();
+				var tekrar = $('#tekrar').val();
+				var metin = $('#metin').val();
+				if(winner!=''){
+					$.ajax({
+						url: './index.php?page=dashboard/footer/makeInstagram',
+						type:'post',
+						data:{'winner':winner,'mention':mention,'hashtag':hashtag,'replacement':replacement,'tekrar':tekrar,'metin':metin,'instagram_id':0},
+						dataType: "json",
+						beforeSend:function(){
+							$('.make_message').html('<span class="right-side-toggle "><i class="ti-reload text-dark"></i></span>');
+							$('.start_hide').hide();
+						},
+						success: function(json) {
+
+							//$('.make_message').html('<div data-label="10" class=" text-center css-bar m-b-0 css-bar-warning counter_bar css-bar-100"></div>');
+							playAllNotes2(90);
+							function playAllNotes2(index) {
+								if(-1 < index) {
+									setTimeout(function() {
+										var num = Math.floor( Math.random() * json['profile_pics'].length );
+										var user = json['profile_pics'][ num ];
+
+										var img = user['profile_pic'];
+										var username = user['username'];
+										//$('.make_message').html('<img src="' + img + '" alt = "">'+username);
+										$('.make_message_username').html('@'+username);
+
+										//$('.counter_bar').attr('data-label',index);
+
+										//$('.counter_bar').removeClass('css-bar-'+ parseInt((parseInt((index*10))+parseInt(10))));
+										//$('.counter_bar').addClass('css-bar-'+index*10);
+										//$('.make_message').html(index);
+										playAllNotes2(--index);
+										if(index<0){
+                      $('.make_message_username').html('');
+											$('.make_message').html(json['message']);
+										}
+									}, 100);
+
+								}
+
+							}
+
+							/*playAllNotes(50);
+							function playAllNotes(index) {
+								if(-1 < index) {
+									setTimeout(function() {
+										var num = Math.floor( Math.random() * json['profile_pics'].length );
+										var user = json['profile_pics'][ num ];
+
+										var img = user['profile_pic'];
+										$('.make_message').html('<img class="rounded-circle mb-2" width="100" height="100" src="' + img + '" alt = "">');
+										//$('.make_message_username').html('@'+username);
+
+										//$('.counter_bar').attr('data-label',index);
+
+										//$('.counter_bar').removeClass('css-bar-'+ parseInt((parseInt((index*10))+parseInt(10))));
+										//$('.counter_bar').addClass('css-bar-'+index*10);
+										//$('.make_message').html(index);
+										playAllNotes(--index);
+										if(index<0){
+											//$('.make_message').html(json['message']);
+										}
+									}, 200);
+
+								}
+
+							}*/
+
+							$('.make_message').html('<div data-label="10" class="m-t-40 text-center css-bar m-b-0 css-bar-warning counter_bar css-bar-100"></div>');
+							playAllNotes(9);
+							function playAllNotes(index) {
+								if(-1 < index) {
+									setTimeout(function() {
+										$('.counter_bar').attr('data-label',index);
+
+										$('.counter_bar').removeClass('css-bar-'+ parseInt((parseInt((index*10))+parseInt(10))));
+										$('.counter_bar').addClass('css-bar-'+index*10);
+										//$('.make_message').html(index);
+										playAllNotes(--index);
+										if(index<0){
+                      $('.make_message_username').html('');
+											$('.make_message').html(json['message']);
+										}
+									}, 1000);
+
+								}
+
+							}
+
+							<!-- $('.make_message').html(''); -->
+							<!-- $('.make_message').html(json['winner']); -->
+
+
+						},
+						error: function(xhr, ajaxOptions, thrownError) {}
+					});
+				}
+				else{
+					$('.winner_div').addClass('has-danger');
+				}
+			});
+
+
+		});
+
+
+        $( document ).ready(function() {
+
+			$('.get_comments').on("click", function() {
+
+				$('.new_insta_form_card').removeClass('has-danger');
+				$('.insta_message').removeClass('alert alert-danger');
+
+				var insta_url = $('#insta_url').val();
+
+				if(insta_url!=''){
+
+				    $.ajax({
+						url: './index.php?page=dashboard/footer/getNewComments',
+						type:'post',
+						data:{'insta_url':insta_url},
+						dataType: "json",
+						beforeSend:function(){
+							$('.get_comments').hide();
+							$('.insta_message').html('<span class="right-side-toggle "><i class="ti-reload text-dark"></i></span>');
+							$('.insta_message1').addClass('alert alert-success');
+							$('.insta_message1').html('İşlem başlatılıyor. Lütfen bekleyin...');
+						},
+						success: function(json) {
+
+							if(json['error']!=''){
+								$('.insta_message1').hide();
+								$('.insta_message').html('');
+								$('.insta_message').addClass('alert alert-danger');
+								$('.insta_message').html(json['error']);
+
+							}else{
+								setTimeout(function(){
+									window.location.href = '/dashboard';
+								}, 1000);
+							}
+
+						},
+            error : function(xhr, textStatus, errorThrown ) {
+                //$.ajax(this);
+                return;
+            }
+					});
+				}
+				else{
+					$('.new_insta_form_card').addClass('has-danger');
+				}
+			});
+		});
+
+
+		$('#to-recover').on("click", function() {
+            $("#loginform").slideUp();
+            $("#recoverform").fadeIn();
+        });
+
+		$('.js-switch').each(function() {
+            new Switchery($(this)[0], $(this).data());
+        });
+
+		
+
+		
+
+    </script>
+
+</body>
+
+</html>

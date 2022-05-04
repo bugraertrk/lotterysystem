@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="tr" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+	<title>Online Çekiliş Yap - Üye Ol</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="refresh" content="600">
+	<meta name="CLASSIFICATION" content="Online Çekiliş Yap - Üye Ol">
+	<meta name="ROBOTS" content="INDEX, FOLLOW">
+  	<meta name="author" content="">
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- page css -->
+  <link href="frontend/view/theme/onlinecekilisyap/assets/css/pages/login-register-lock.css" rel="stylesheet">
+	<link href="/frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+	<!-- This page CSS -->
+	<!-- chartist CSS -->
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/chartist-js/dist/chartist.min.css" rel="stylesheet">
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/morrisjs/morris.css" rel="stylesheet">
+	<!-- Vector CSS -->
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+	<!--c3 CSS -->
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/c3-master/c3.min.css" rel="stylesheet">
+	<link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
+	<!-- Dashboard 1 Page CSS -->
+	<link href="frontend/view/theme/onlinecekilisyap/assets/css/pages/dashboard2.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="frontend/view/theme/onlinecekilisyap/assets/css/style.css?v=1" rel="stylesheet">
+
+  <!-- You can change the theme colors from here -->
+	<link href="frontend/view/theme/onlinecekilisyap/assets/css/colors/blue-dark.css" id="theme" rel="stylesheet">
+ 	<link href="frontend/view/theme/onlinecekilisyap/assets/css/pages/widget-page.css" rel="stylesheet">
+  <link href="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/css-chart/css-chart.css" rel="stylesheet">
+	<link href="frontend/view/theme/onlinecekilisyap/assets/css/pages/pricing-page.css" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="gtag/js.js?id=UA-34906611-20"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-34906611-20');
+		gtag('config', 'AW-875000958');
+	</script>
+
+	<script>
+			</script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+<section id="wrapper">
+        <div class="login-register" style="background-image:url(frontend/view/theme/onlinecekilisyap/assets/design_files/images/background/login-register.jpg);">
+            <div class="login-box card">
+                <div class="card-body">
+                    <form class="form-horizontal" id="loginform" method="post" action="register">
+                        <h3 class="box-title m-b-20">Üye Ol</h3>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input class="form-control" name="name" type="text" required="" placeholder="İsim" value="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <input class="form-control" name="email" type="email" required="" data-validation-required-message="Zorunlu Alan" placeholder="Email Adresi" value="" aria-invalid="true">
+                            </div>
+                        </div>
+                        <!--div class="form-group ">
+                            <div class="col-xs-12">
+                                <input class="form-control" name="gsm" type="text" required="" data-mask="0 999 999 9999" placeholder="Cep Telefonu" value="" />
+                            </div>
+                        </div-->
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <input class="form-control" name="password" type="password" required="" placeholder="Şifre">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input class="form-control" name="confirm" type="password" required="" placeholder="Şifre Tekrar">
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <div class="col-xs-12">
+                                <button class="btn btn-primary btn-lg btn-block btn-rounded" type="submit">Üye Ol</button>
+                                                            </div>
+                        </div>
+                        <div class="form-group m-b-0">
+							<div class="col-sm-12 text-center">
+                                Onlinecekilisyap.com'a kayıt olduğunuzda <a href="login.html" class="text-info m-l-5 sozlesme" data-toggle="modal" data-target=".bs-example-modal-lg">Kullanım Şartlarını</a> kabul etmiş olursunuz.
+                            </div>
+                            <div class="col-sm-12 text-center">
+                                Hesabınız var mı? <a href="login.html" class="text-info m-l-5"><b>Giriş Yap</b></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myLargeModalLabel">Kullanıcı Sözleşmesi</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body p-lg">
+		<p><strong>Madde 1. Taraflar</strong><br>İşbu Kullanıcı Sözleşmesi ("Sözleşme”), RGS YAZILIM VE BİLİŞİM SİSTEMLERİ LTD. ŞTİ ("Şirket”) ile www.onlinecekilisyap.com adresinde yer alan siteye ("Site”) kullanıcı ("Kullanıcı(lar)”) olarak kaydolan kişi arasında akdedilmektedir. Sözleşme, Kullanıcı tarafından elektronik ortamda kabulü ile birlikte yürürlüğe girecek olup; taraflarca Sözleşme'de belirtilen usuller doğrultusunda sona erdirilmediği sürece yürürlükte kalmaya devam edecektir.</p>
+<p><strong>Madde 2. Sözleşme'nin Konusu ve Kapsamı</strong><br>İşbu Sözleşme, Kullanıcı tarafından, Site üzerinden erişilen bulut tabanlı akıllı data yönetim uygulamasından ("Uygulama”) faydalanılmasına ve Kullanıcı tarafından Site'de görüntülenen verilere ("İçerik”) ilişkin koşul ve şartlar ile ilgili tarafların hak ve yükümlülüklerinin belirlenmesi amacıyla akdedilmektedir. Site kapsamında Site ve Uygulama'nın kullanımına ilişkin olarak Şirket tarafından Kullanıcılar'a sunulan kullanım koşulları, kural ve şartlar da işbu Sözleşme'nin eki ve ayrılmaz bir parçası niteliğinde olup burada yer alan hak ve yükümlülüklerle birlikte tarafların hak ve yükümlülüklerinin tamamını oluşturmaktadır.</p>
+<p><strong>Madde 3. Tarafların Hak ve Yükümlülükleri</strong><br>3.1 Kullanıcı, Uygulama'dan faydalanmak için Şirket tarafından talep edilen bilgileri tam, doğru ve güncel bir şekilde sağlayarak işbu Sözleşme'yi onaylaması gerektiğini bildiğini beyan eder. Kullanıcı statüsünün tesisi sırasında sağlanan bilgilerde herhangi bir değişiklik olması halinde, söz konusu bilgiler derhal güncellenecektir. Bu bilgilerin eksik veya gerçeğe aykırı olarak verilmesi ya da güncel olmaması nedeniyle Site ya da Uygulama'ya erişim sağlanamamasından ve bunlardan faydalanılamamasından Şirket sorumlu değildir.</p>
+<p>3.2 Kullanıcı, 18 yaşını doldurmuş olduğunu ve işbu Sözleşme'yi akdetmek için gereken yasal ehliyete sahip bulunduğunu beyan eder. Kullanıcı'nın Site'ye bir işletme adına erişiyor olması halinde, Kullanıcı buna ilişkin gerekli yetkiyi haiz olduğunu kabul ve beyan eder. Bu durumda Kullanıcı statüsü ile hak ve yükümlülükler söz konusu işletmeye ait olacaktır.</p>
+<p>3.3 Kullanıcı, tek bir Kullanıcı hesabı tesis etme hakkına sahip olup, Kullanıcı hesabının Şirket tarafından askıya alınması veya sona erdirilmesini takiben Kullanıcı tarafından aynı veya başka bilgiler kullanılarak ikinci bir hesap tesis edilmesi yasaktır. Şirket'in herhangi bir gerekçe göstermeksizin, tamamen kendi iradesine tabi olarak Kullanıcı hesabının açılmasını reddetme hakkı saklıdır.</p>
+<p>3.4 Kullanıcı tarafından Site'ye erişim e-posta adresi ve şifresi kullanılarak gerçekleştirilecektir. Bu şifrenin gizliliğinin ve güvenliğinin korunmasından Kullanıcı sorumlu olacak olup Site üzerinden söz konusu bilgilerin kullanımı ile gerçekleştirilen her türlü faaliyetin Kullanıcı tarafından gerçekleştirildiği kabul edilecek, bu faaliyetlerden doğan her türlü yasal ve cezai sorumluluk Kullanıcı'ya ait olacaktır. Kullanıcı, şifresinin yetkisiz kullanımı veya güvenliğin başka şekilde ihlalinden haberdar olduğunda bu durumu derhal Şirket'e bildirecektir.</p>
+<p>3.5 Kullanıcı, Uygulama'yı yalnızca yasalara uygun faaliyetleri için kullanacağını, işbu Sözleşme, ekleri, yürürlükteki mevzuat ve Uygulama'ya ilişkin olarak Site'de öngörülen diğer hüküm ve koşullara uygun davranacağını kabul ve taahhüt eder. Kullanıcı, Uygulama ve Site'yi üçüncü kişilere hizmet sunmak için yetkili olduğu sürece üçüncü kişi adına kullanabilecektir. Kullanıcı bu kapsamda, söz konusu kişilerin de işbu Sözleşme ve kendisi için geçerli olan diğer tüm hükümlere uygun davranmasını sağlayacaktır.</p>
+<p>3.6 Kullanıcı, muhtelif zamanlarda Uygulama'yı kullanması için üçüncü bir kişiyi ("Yetkilendirilmiş Kullanıcı”) yetkilendirebilir. Yetkilendirilmiş Kullanıcı'nın kim olacağı ve Uygulama kapsamındaki yetki seviyesi Kullanıcı tarafından belirlenecektir. Kullanıcı, Yetkilendirilmiş Kullancılar'ın Uygulama'yı kullanmasından sorumlu olup Yetkilendirilmiş Kullanıcılar'ın Uygulama'ya erişimini her zaman kontrol edecek ve Yetkilendirilmiş Kullanıcı'nın Uygulama'ya erişim seviyesini her zaman ve bir nedene bağlı olmaksızın değiştirebilecek veya erişimini iptal edebilecektir. Kullanıcı ve Yetkilendirilmiş Kullanıcı arasında Uygulama'ya erişime ilişkin olarak bir uyuşmazlık çıkması halinde Yetkilendirilmiş Kullanıcı'nın Uygulama veya İçerik'e erişimi ve erişim seviyesine ilişkin kararı Kullanıcı verecektir.</p>
+<p>3.7 Kullanıcı tarafından görüntülenen İçerik Kullanıcı'nın mülkiyetinde olup İçerik'e ilişkin tüm sorumluluk Kullanıcı'ya aittir. Şirket, işbu Sözleşme kapsamında Kullanıcı tarafından kendisine sağlanan lisans kapsamında İçerik'i kullanma hakkına haizdir. İçerik'e yahut İçerik'in yol açabileceği kayıp veya zararlara ilişkin olarak Şirket sorumlu tutulamayacak olup sayılanlarla sınırlı olmaksızın, hukuka uygunluk, İçerik'in doğruluğu, kullanıcılara verilen hizmetin geçerliliği ve yasallığı, finansal işlemler ve vergi bildirimine ilişkin olarak Şirket'in hiçbir sorumluluğu bulunmamaktadır. Finansal işlemler, vergi ve diğer hususlar hakkında ilgili mevzuata uygunluğun sağlanması münhasıran Kullanıcı'nın sorumluluğundadır. Kullanıcı, Şirket'in finansal düzenlemeler başta olmak üzere, yürürlükteki mevzuattan kaynaklanan gereksinimlere dayanarak İçerik'i Uygulama'dan ve sistemlerinden silebileceğini ve Şirket'in kayıp veriler de dahil olmak üzere bu kapsamda meydana gelebilecek zararlardan sorumlu olmadığını kabul eder.Şirket hiçbir şekilde cekilis ödül hediye sistemi yada piyango vb. işlemleri yapmamaktadır. Sağlanan altyapı sosyal medya platformlarından çekilen verilerin işlenmesi ve son kullanıcıya sunulması işlemlerini yapmaktadır. Şirketin kullanıcının yapmış olduğu işlemler sonucunda oluşabilecek yasal durumlardan dolayı hiçbir sorumluluğu bulunmamaktadır.</p>
+<p>3.8 Kullanıcı, Şirket'in veya Uygulama'nın üçüncü kişiler tarafından barındırılıyor olması halinde bu üçüncü kişilerin bilgisayar ve ağ sistemlerinin güvenlik ve bütünlüğünü tehlikeye düşürecek faaliyetlerde bulunmayacağını, Uygulama'yı, Uygulama'nın, Site'nin veya hizmetlerin sunulduğu diğer sistemlerin işlerliğine yahut Uygulama ve Site'den faydalanan diğer kullanıcıların bunlardan faydalanmasına engel olacak veya bunlara zarar verecek şekilde veya hatalı kullanmamayı, Uygulama'nın barındırıldığı bilgisayar sistemlerine veya Uygulama'ya kendisine tanınan erişim kapsamı dışında yetkisiz erişim sağlamayacağını, Site'ye Şirket'in ve üçüncü kişilerin bilgisayar sistemlerine, cihazlarına ve yazılımlarına zarar verecek dosyalar veya hukuka aykırı İçerikler (Kullanıcı'nın üzerinde kullanma hakkı olmayan telif hakkıyla korunan veya ticari sır niteliğinde olan İçerikler ve diğer materyaller de dahil olmak üzere) aktarmayacağını ve yüklemeyeceğini, hizmetlerin sunulmasında veya Site'nin çalışmasında kullanılan bilgisayar programlarını olağan kullanım için mutlak olarak gerekli olmadığı sürece değiştirmeyeceğini, kopyalamayacağını, uyarlamayacağını, çoğaltmayacağını, kaynak kodu oluşturmayacağını yahut tersine mühendislik işlemleri yapmayacağını kabul ve taahhüt eder.</p>
+<p>3.9 Kullanıcı, Uygulama'yı kullanmasının aylık işlem ve saklama hacimleri de dahil olmak üzere kısıtlamalara tabi olabileceğini kabul eder. Söz konusu kısıtlamalar Uygulama içinde belirtilecektir.</p>
+<p>3.10 Kullanıcı, Uygulama'da görüntülenen İçerikler'in kopyalarını saklayacaktır. Şirket, veri kaybını önlemek için gerekli politika ve usullere uymakla beraber, İçerik'in kaybının söz konusu olmayacağına dair garanti vermemektedir. Şirket, nasıl ortaya çıktığına bakılmaksızın İçerik'in kaybından sorumlu değildir.</p>
+<p>3.11 Şirket, Kullanıcı tarafından kendisi ile paylaşılan bilgi ve verileri işbu Sözleşme'ye ek niteliğinde olan "Gizlilik Politikası” kapsamında saklayacak ve kullanacaktır. Kullanıcı, Şirket'in yürürlükteki mevzuat uyarınca yetkili makamlardan talep gelmesi halinde Kullanıcı'nın kendisinde bulunan bilgilerini ilgili yetkili makamlarla paylaşabileceğini kabul eder. Bunun dışında Kullanıcı'ya ve Kullanıcı tarafından Site üzerinden gerçekleştirilen işlemlere ait bilgiler Kullanıcı'nın güvenliği, Şirket'in yükümlülüklerini ifa ve bazı istatistiki değerlendirmeler için kullanılabilecektir. Şirket ayrıca, fatura gönderme, ödeme bilgisi paylaşma gibi talep edilen hizmetleri sağlamak için İçerik'i diğer kullanıcılarla paylaşma hakkına sahiptir. Kullanıcı, diğer kullanıcılara ait İçerikler'i kullanmak istemesi halinde ilgili kullanıcıların onayını alacak ve söz konusu İçerikler'i diğer kullanıcı tarafından verilen onay kapsamında kullanacaktır. Bu bilgiler ayrıca bir veritabanı üzerinde tasnif edilip muhafaza edilebilecek ve Şirket, Kullanıcı'nın söz konusu kullanım ve işlem bilgilerini performans değerlendirmeleri, Şirket'in ve iş ortaklarının pazarlama kampanyaları, yıllık raporlar ve benzeri işlemler için bunlar için gerekli olan süre boyunca söz konusu verilerin anonim hale getirilmesini takiben kullanabilecektir. Kullanıcı, İçerik ve diğer bilgilerin Şirket veya üçüncü kişiler tarafından Türkiye'de veya yurt dışında bulunan veri merkezlerinde saklanabileceğini kabul eder.</p>
+<p>3.12 Uygulama'ya ilişkin teknik sorunlar çıkması halinde Kullanıcı, Şirket'le iletişime geçemeden önce sorunu tespit ve teşhis etmek için makul çabayı sarf edecektir. Kullanıcı'nın teknik destek ihtiyacının devam etmesi halinde gerekli destek Site, Uygulama yahut diğer uygun kanallardan sağlanacaktır.</p>
+<p>3.13 Kullanıcı'ya Site üzerinden iletişim ve veri işleme araçları (forum, sohbet araçları veya mesaj merkezi gibi) sağlanması durumunda Kullanıcı bu iletişim araçlarını yalnızca hukuka uygun amaçlar çerçevesinde kullanacağını beyan ve taahhüt eder. Kullanıcı, söz konusu iletişim araçlarını ürün ve hizmet satışı, karşı tarafın rızası olmadan gönderilen e-postalar, üçüncü kişilerin yazılım ve bilgisayar sistemlerine zarar verebilecek dosyalar, diğer kullanıcılar bakımından hakaret içeren içerikler yahut hukuka aykırı her türlü içerik de dahil olmak üzere Uygulama amacı dışında materyaller paylaşmak için kullanmayacaktır. Kullanıcı, Site üzerinden gerçekleştirdiği her türlü iletişim bakımından bunu yapma yetkisini haiz olduğunu taahhüt eder. Şirket'in Site üzerinden gerçekleştirilen iletişimlerin uygunluğunu yahut bunların Uygulama'nın kullanım amaçlarına yönelik olduğunu kontrol etme yükümlülüğü bulunmamaktadır. Uygulama üzerinden erişilen veya Uygulama'ya ilişkin olarak kullanılan diğer web tabanlı iletişim araçları bakımından da Kullanıcı Site üzerinden sağlanan iletişim araçlarını kullanırken göstermekle yükümlü olduğu özeni gösterecektir. Şirket, Site üzerinden sağladığı iletişim araçlarını kendi takdirine bağlı olarak dilediği zaman kaldırma hakkına sahiptir.</p>
+<p>3.14 Şirket, herhangi bir ön bildirimde bulunmaksızın işbu Sözleşme ve eklerini revize etme hakkına sahip olup bu hakkın kullanılması halinde ilgili değişiklik Kullanıcı tarafından Site'nin bir sonraki kullanımı ile birlikte yürürlüğe girecektir. Kullanıcı'nın söz konusu değişiklikleri kabul etmemesi halinde işbu Sözleşme'yi aşağıda belirtilen şekilde feshetme hakkı saklıdır.</p>
+<p>3.15 Kullanıcı, Kullanıcı hesabını ve işbu Sözleşme ile Site kullanımından doğan hak ve yükümlülüklerini herhangi bir şekilde üçüncü bir kişiye devir veya temlik edemez.</p>
+<p>3.16 Kullanıcı'nın işbu Sözleşme ve Site kapsamında yer alan diğer koşul ve şartlar ile bu kapsamdaki beyan ve taahhütlerine aykırı davranması halinde Şirket Kullanıcı'nın üyeliğini askıya alma veya Sözleşme'yi aşağıda belirtilen şekilde feshederek kullanıcı statüsünü bu şekilde sona erdirme hakkına sahip olacaktır. Böyle bir durumda Şirket'in söz konusu aykırılıktan doğan zararlarının Kullanıcı'dan talep hakkı saklıdır.</p>
+<p>3.17 Şirket uygulama içerisinde yer alan verilerin tam doğru olduğuna dair garanti vermemektedir. Kullanıcı uygulama içerisinde yer alan verilerin sitesi ile ilgili genel veya hatalı veriler olabileceğini kabul eder.</p>
+<p>3.18 Şirket uygulama içerisinde yer alan yönlendirmelerin genel kurallar çerçevesinde yapıldığını belirtmektedir. Şirket bu verilerin kullanımı ve Kullanıcı'nın sitesinde yapacağı çalışmaların sonucunda oluşabilecek hatalardan sorumlu tutulamaz.</p>
+<p>3.19 Şirket uygulama içerisinde yer alan servis ve hizmetlerin içeriğinde değişiklik yapabilir, veya bir hizmeti tamamen kaldırabilir, yeni hizmetler ekleyebilir. Kullanıcı bu durumda Şirket'in herhangi bir sorumluluğunun bulunmadığını kabul eder. Şirket Kullanıcının uygulamayı tüm kullandığı zamanlarda uygulamada her türlü değişiklik, ekleme silme gibi işlemleri yapma hakkını saklı tutar.</p>
+<p><strong>Madde 4. Ödeme Koşulları</strong><br>4.1 Kullanıcı Uygulama'dan ancak Site'de beyan edilen ücretleri yine Site'de beyan edilen ödeme koşulları ve araçları ile tam ve eksiksiz olarak ödemesi karşılığında faydalanabilecektir.</p>
+<p>4.2 Kullanıcı, Uygulama'yı Site'de belirtilecek süre boyunca ücret ödemeden kullanabilecektir. Söz konusu deneme periyodunun bitimiyle Kullanıcı'nın üyeliği, türü hizmet seviyesi, işlevsellik, kampanyalar ya da sözleşme süresine göre belirlenecek ücretli üyelik haline gelecektir. Uygulama'ya ilişkin ücretler, ödeme koşulları, ücretlerin yürürlük tarihleri Site'nin ilgili bölümlerinde ilan edilecektir. Kullanıcı, kendi isteğine bağlı olarak üyelik paketini yükseltebilecek veya düşürebilecektir. Buna ilişkin talepler, Şirket tarafından aksi öngörülmedikçe ilgili üyelik döneminin sonunda gerçekleştirilecektir. Kullanıcı'nın üyelik süresi boyunca üyelik paketine ilişkin ücret ve ödeme koşullarında yapılacak değişiklikler, Kullanıcı'nın üyelik döneminin sona ermesine dek uygulanmayacak, yeni ücretler ve ödeme koşulları yeni üyelik döneminin başlamasıyla geçerli olacaktır. Üyelik dönemi boyunca Sözleşme'nin feshi de dahil olmak üzere üyeliğin herhangi bir nedenle sona ermesi halinde geri ödeme yapılmayacaktır.</p>
+<p>4.3 Kullanıcı tarafından paket ücretleri ödendiği takdirde hizmet kullanımı devam edecektir.</p>
+<p>4.4 Şirket, Kullanıcı tarafından iletilen iletişim adresine üyelik döneminin başlangıcında kullanım ücretlerine ilişkin faturayı iletecektir. Tüm faturalar, sonradan ödemeli üyelik halinde bir önceki üyelik dönemine ilişkin ücretleri, ön ödemeli üyeliklerde ise bir sonraki üyelik dönemine ilişkin ücretleri içerecektir. Kullanıcı, faturadaki ilgili tutarı fatura tarihini takip eden 14 (on dört) gün içinde ödeyecektir. İlgili ücretlere ilişkin vergi ve harçların ödenmesinden Kullanıcı sorumludur.</p>
+<p>4.5 Kullanıcı, Şirket veya Şirket tarafından onaylanmış üçüncü kişiler üyeliğe ve ödemeye ilişkin işlemler veya banka entegrasyonunu ve ilgili güncellemeleri gerçekleştirmek için Kullanıcı'nın kredi kartı ve ödeme bilgilerini saklayabilecektir.</p>
+<p><strong>Madde 5. Fikri Mülkiyet Hakları</strong><br>5.1 Site ve Uygulama üzerindeki her türlü hak, mülkiyet ve menfaat Şirket'e aittir. İşbu Sözleşme kapsamında Kullanıcı'ya Site ve Uygulama'yı kullanmak üzere kişiye özel, dünya çapında, telifsiz, devredilemez ve münhasır olmayan lisans verilmektedir. Sözleşme ve Site'ye ilişkin diğer koşullardaki hiçbir hüküm Site ve Uygulama'ya ilişkin hakların ve menfaatlerin Kullanıcı'ya devredildiği şeklinde yorumlanamaz. Kullanıcı, işbu Sözleşme kapsamında Şirket'e Kullanıcı'nın Uygulama'ya erişimi, Uygulama'yı kullanması ve hizmetlerin sağlanmasına yönelik diğer amaçlarla, bilgilerinin ve İçerik'in kullanılması, kopyalanması, iletilmesi, saklanması ve yedeğinin alınması için kullanım hakkı tanımaktadır. Şirket, hizmetlerin sağlanması amacıyla İçerik'e ilişkin olarak üçüncü kişi geliştiricilere alt lisans verme hakkını haizdir.</p>
+<p>5.2 Kullanıcı, hiçbir şekilde ve nedenle Site'yi veya Uygulama'yı kopyalama, değiştirme, çoğaltma, ters mühendisliğe tabi tutma, geri derleme ve sair şekillerde Site üzerindeki yazılımın kaynak koduna ulaşma, Site'den işleme eser oluşturma hakkına sahip değildir. Site'ye ilişkin tarayıcı ve içeriklerin herhangi bir şekilde değiştirilmesi, Şirket'in açık izni olmaksızın Site'ye veya Site'den link verilmesi kesinlikle yasaktır.</p>
+<p>5.3 Kullanıcı, herhangi bir şekilde Şirket'in (veya bağlı şirketlerinin) ticari unvanını, markasını, hizmet markasını, logosunu, alan adını vs. kullanmayacaktır.</p>
+<p><strong>Madde 6. Sorumluluğun Kısıtlanması</strong><br>6.1 Site kapsamındaki Uygulama, yazılım ve sair içerikler "OLDUĞU GİBİ" sunulmakta olup, bu kapsamda Şirket'in Uygulama, yazılım ve içeriğin doğruluğu, tamlığı ve güvenilirliği ile ilgili herhangi bir sorumluluk ya da taahhüdü bulunmamaktadır. Kullanıcı, Şirket'in ayrıca İçerik ve diğer Kullanıcı verilerinin birbiriyle ilişkisine dair taahhütte bulunmadığını anlar ve kabul eder. Şirket Uygulama'nın kullanımının kesintisiz ve hatasız olduğunu taahhüt etmemektedir. Şirket, Uygulama'nın 7/24 erişilebilir ve kullanılabilir olmasını hedeflemekle birlikte Uygulama'ya erişimi sağlayan sistemlerin işlerliği ve erişilebilirliğine ilişkin bir garanti vermemektedir. Kullanıcı, Uygulama'ya erişimin muhtelif zamanlarda engellenebileceğini ya da erişimin kesilebileceği kabul eder. Şirket, söz konusu engelleme veya kesintilerden hiçbir şekilde sorumlu değildir.</p>
+<p>6.2 Kullanıcı, Site üzerinden Şirket'in kontrolünde olmayan başka internet sitelerine ve/veya portallara, dosyalara veya içeriklere link verilebileceğini ve bu tür linklerin yöneldiği internet sitesini veya işleten kişisini desteklemek amacıyla veya internet sitesi veya içerdiği bilgilere yönelik herhangi bir türde bir beyan veya garanti niteliği taşımadığını, söz konusu linkler vasıtasıyla erişilen portallar, internet siteleri, dosyalar ve içerikler, hizmetler veya ürünler veya bunların içeriği hakkında Şirket'in herhangi bir sorumluluğu olmadığını kabul ve beyan eder.</p>
+<p>6.3 Kullanıcı, Site üzerinden sunulan Uygulama ve Uygulama'lara erişim ve bunların kalitesinin büyük ölçüde ilgili İnternet Servis Sağlayıcısı'ndan temin edilen hizmetin kalitesine dayandığını ve söz konusu hizmet kalitesinden kaynaklı sorunlarda Şirket'in herhangi bir sorumluluğunun bulunmadığını kabul eder.</p>
+<p>6.4 KULLANICI, GÖRÜNTÜLEDİĞİ İÇERİKLER İLE SİTE VE UYGULAMA'NIN KULLANIMINDAN MÜNHASIRAN SORUMLUDUR. KULLANICI, FİKRİ MÜLKİYET İHLALLERİ, İÇERİK, UYGULAMA VE SİTE'NİN KULLANIMINA İLİŞKİN OLARAK ÜÇÜNCÜ KİŞİLER TARAFINDAN İLETİLEBİLECEK HER TÜRLÜ İDDİA VE TALEPTEN (YARGILAMA MASRAFLARI VE AVUKATLIK ÜCRETLERİ DE DAHİL OLMAK ÜZERE) ŞİRKET'İ BERİ KILDIĞINI KABUL EDER.</p>
+<p>6.5 ŞİRKET, UYGULANACAK HUKUKUN İZİN VERDİĞİ ÖLÇÜDE, KAR KAYBI, ŞEREFİYE VE İTİBAR KAYBI, İKAME ÜRÜN VE HİZMET TEMİNİ İÇİN YAPILAN HARCAMA GİBİ KALEMLER DE DAHİL ANCAK BUNLARLA SINIRLI OLMAKSIZIN SİTE'NİN KULLANIMI NETİCESİNDE MEYDANA GELEN HİÇBİR DOĞRUDAN, DOLAYLI, ÖZEL, ARIZİ, CEZAİ ZARARDAN SORUMLU OLMAYACAKTIR. BUNA EK OLARAK ŞİRKET, ZIMNİ GARANTİ, TİCARETE ELVERİŞLİLİK, BELLİ BİR AMACA UYGUNLUK DA DAHİL ANCAK BUNLARLA SINIRLI OLMAMAK ÜZERE, AÇIK VEYA ZIMNİ HİÇ BİR TÜRLÜ GARANTİ VERMEDİĞİNİ DE AYRICA BEYAN EDER. ŞİRKET'İN İŞBU SÖZLEŞME KAPSAMINDAKİ SORUMLULUĞU HER HALÜKARDA İLGİLİ ZARARIN DOĞDUĞU TARİHE KADAR KULLANICI TARAFINDAN İŞBU SÖZLEŞME'YE KONU HİZMETLER KAPSAMINDA ÖDENMİŞ OLAN TUTARLA SINIRLI OLACAKTIR.</p>
+<p><strong>Madde 7. Sözleşme'nin Yürürlüğü ve Feshi</strong><br>7.1 İşbu Sözleşme Kullanıcı tarafından elektronik ortamda kabulü ile birlikte yürürlüğe girecek ve taraflardan herhangi biri tarafından aşağıda belirtilen şekilde feshedilmediği sürece yürürlükte kalacaktır.</p>
+<p>7.2 Taraflardan herhangi biri, diğer tarafça bildirilen elektronik posta adresine 1 (bir) hafta önceden yapacağı yazılı bir bildirimle işbu Sözleşme'yi dilediği zaman herhangi bir gerekçe göstermeksizin ve tazminat ödemeksizin feshedebilecektir.</p>
+<p>7.3 Taraflar'dan birinin işbu Sözleşme'den kaynaklanan yükümlülüklerini tam ve gereği gibi yerine getirmemesi ve diğer tarafça yapılacak yazılı bildirime karşın söz konusu aykırılığın verilen süre içerisinde giderilmemesi halinde bu Sözleşme bildirimi yapan tarafça feshedilebilecektir. Bahsi geçen aykırılığın Kullanıcı tarafından gerçekleştirilmesi halinde Şirket aykırılık giderilene kadar Kullanıcı statüsünü askıya alma hakkına sahip olacaktır. Kullanıcı'nın yürürlükteki mevzuatı ihlal etmesi halinde Şirket Sözleşme'yi derhal geçerli olacak şekilde haklı nedenle feshedebilecektir.</p>
+<p>7.4 Sözleşme'nin feshi Taraflar'ın fesih tarihine kadar doğmuş olan hak ve yükümlülüklerini ortadan kaldırmayacaktır. Sözleşme'nin feshi ile birlikte Kullanıcı, o güne kadar doğmuş olan tüm ücret ve masraflardan sorumlu olup fesih tarihi itibariyle Site ve Uygulama'yı kullanamayacaktır. Ön ödemeli üyeliklerin feshi halinde Kullanıcı'ya para iadesi yapılmaz.</p>
+<p>7.5 Kullanıcı'nın hesabının 3 (üç) ay boyunca pasif olması halinde Şirket işbu Sözleşme'yi feshedebilecektir.</p>
+<p>7.6 Kullanıcı hesabının yasal nedenlerle engellenmiş olmadığı ve Sözleşme'nin feshedildiği hallerde Şirket İçerik'e erişimi kapatma hakkına sahiptir.</p>
+<p>7.7 Şirket, işbu Sözleşme yürürlükte olduğu müddetçe İçerik'i veritabanlarında saklama hakkına sahiptir.</p>
+<p><strong>Madde 8. Muhtelif Hükümler</strong><br>8.1 İşbu Sözleşme'nin herhangi bir hükmünün veya sözleşmede yer alan herhangi bir ifadenin geçersizliği, yasaya aykırılığı ve uygulanamazlığı, Sözleşme'nin geri kalan hükümlerinin yürürlüğünü ve geçerliliğini etkilemeyecektir.</p>
+<p>8.2 İşbu Sözleşme ekleri ile bir bütündür. Sözleşme ile ekleri arasında herhangi bir çelişki olması halinde, ilgili eklerde yer alan hükümler geçerli olacaktır.</p>
+<p>8.3 Kullanıcı ile kayıt olurken bildirdikleri e-mail vasıtasıyla veya Site'de yer alan genel bilgilendirme aracılığıyla iletişim kurulacaktır. E-mail ile yapılan iletişim yazılı iletişimin yerini tutar. E-mail adresini güncel tutmak ve Site'yi bilgilendirmeler için düzenli kontrol etmek Kullanıcı'nın sorumluluğundadır.</p>
+<p>8.4 İşbu Sözleşme ve eklerinden kaynaklı uyuşmazlıklarda İstanbul Mahkemeleri ve İcra Daireleri geçerli olacaktır.</p>      </div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+
+	
+  <div id="responsive-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Çekilişe Başla!</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+					<form class="card-no-border">
+						<div class="form-group card new_insta_form_card">
+							<h3 class="control-label cart-title">Instagram Gönderi Adresi:</h3>
+							<label for="message-text" class="control-label card-subtitle">
+  							- Profiliniz gizli olmamalıdır.<br>
+  							- Gönderi yoruma kapalı olmamalıdır.<br>
+                - Gönderi adresinizin doğru olduğundan emin olun.
+              </label>
+
+							<input class="form-control" id="insta_url" placeholder="Örn. https://www.instagram.com/p/BspYGothx1n/">
+						</div>
+						<div class="button-group m-b-40">
+							<div class="pull-left insta_message"></div>
+							<button type="button" class="btn waves-effect pull-right waves-light btn-lg btn-primary get_comments">Yorumları Çek</button>
+							<div class="pull-right insta_message1"></div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+  <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/bootstrap/js/popper.min.js"></script>
+    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/bootstrap/js/bootstrap.min.js"></script>
+	<!-- slimscrollbar scrollbar JavaScript -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/ps/perfect-scrollbar.jquery.min.js"></script>
+	    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/toast-master/js/jquery.toast.js"></script>
+    <!--Wave Effects -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/js/custom.min.js"></script>
+	<script src="frontend/view/theme/onlinecekilisyap/assets/js/mask.js"></script>
+	<script src="frontend/view/theme/onlinecekilisyap/assets/js/validation.js"></script>
+
+	<!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+
+      <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/datatables/jquery.dataTables.min.js"></script>
+    <!-- start - This is for export functionality only -->
+    <script src="buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="buttons/1.2.2/js/buttons.print.min.js"></script>
+
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="frontend/view/theme/onlinecekilisyap/assets/design_files/node_modules/styleswitcher/jQuery.style.switcher.js"></script>
+
+
+
+
+
+    <!--Custom JavaScript -->
+    <script type="text/javascript">
+        $(function() {
+            $(".preloader").fadeOut();
+        });
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+
+		$( document ).ready(function() {
+
+			
+			$('.start_hide').show();
+
+			$('.btn_filtrele').on("click", function() {
+				$('.start_hide').show();
+				$('.make_cekilis').addClass('invisible');
+				$('.winner_div').removeClass('has-danger');
+				$('.filtre_message').removeClass('alert alert-danger');
+
+				var winner = $('#winner').val();
+				var mention = $('#mention').val();
+				var hashtag = $('#hashtag').val();
+				var replacement = $('#replacement').val();
+				var tekrar = $('#tekrar').val();
+				var metin = $('#metin').val();
+				if(winner!=''){
+					$.ajax({
+						url: './index.php?page=dashboard/footer/makeInstagramFilter',
+						type:'post',
+						data:{'winner':winner,'mention':mention,'hashtag':hashtag,'replacement':replacement,'tekrar':tekrar,'metin':metin,'instagram_id':0},
+						dataType: "json",
+						beforeSend:function(){
+							$('.filtre_message').html('<span class="right-side-toggle "><i class="ti-reload text-dark"></i></span>');
+						},
+						success: function(json) {
+							$('.filtre_message').html('');
+							if(json['error']!=''){
+								$('.filtre_message').addClass('alert alert-danger');
+								$('.filtre_message').html(json['error']);
+							}
+							else{
+								$('.make_cekilis').removeClass('invisible');
+								$('.filtre_message').addClass('alert alert-success');
+								$('.filtre_message').html(json['message']);
+							}
+
+						},
+						error: function(xhr, ajaxOptions, thrownError) {}
+					});
+				}
+				else{
+					$('.winner_div').addClass('has-danger');
+				}
+			});
+
+
+
+      $('.make_cekilis').on("click", function() {
+
+				var winner = $('#winner').val();
+				var mention = $('#mention').val();
+				var hashtag = $('#hashtag').val();
+				var replacement = $('#replacement').val();
+				var tekrar = $('#tekrar').val();
+				var metin = $('#metin').val();
+				if(winner!=''){
+					$.ajax({
+						url: './index.php?page=dashboard/footer/makeInstagram',
+						type:'post',
+						data:{'winner':winner,'mention':mention,'hashtag':hashtag,'replacement':replacement,'tekrar':tekrar,'metin':metin,'instagram_id':0},
+						dataType: "json",
+						beforeSend:function(){
+							$('.make_message').html('<span class="right-side-toggle "><i class="ti-reload text-dark"></i></span>');
+							$('.start_hide').hide();
+						},
+						success: function(json) {
+
+							//$('.make_message').html('<div data-label="10" class=" text-center css-bar m-b-0 css-bar-warning counter_bar css-bar-100"></div>');
+							playAllNotes2(90);
+							function playAllNotes2(index) {
+								if(-1 < index) {
+									setTimeout(function() {
+										var num = Math.floor( Math.random() * json['profile_pics'].length );
+										var user = json['profile_pics'][ num ];
+
+										var img = user['profile_pic'];
+										var username = user['username'];
+										//$('.make_message').html('<img src="' + img + '" alt = "">'+username);
+										$('.make_message_username').html('@'+username);
+
+										//$('.counter_bar').attr('data-label',index);
+
+										//$('.counter_bar').removeClass('css-bar-'+ parseInt((parseInt((index*10))+parseInt(10))));
+										//$('.counter_bar').addClass('css-bar-'+index*10);
+										//$('.make_message').html(index);
+										playAllNotes2(--index);
+										if(index<0){
+                      $('.make_message_username').html('');
+											$('.make_message').html(json['message']);
+										}
+									}, 100);
+
+								}
+
+							}
+
+							/*playAllNotes(50);
+							function playAllNotes(index) {
+								if(-1 < index) {
+									setTimeout(function() {
+										var num = Math.floor( Math.random() * json['profile_pics'].length );
+										var user = json['profile_pics'][ num ];
+
+										var img = user['profile_pic'];
+										$('.make_message').html('<img class="rounded-circle mb-2" width="100" height="100" src="' + img + '" alt = "">');
+										//$('.make_message_username').html('@'+username);
+
+										//$('.counter_bar').attr('data-label',index);
+
+										//$('.counter_bar').removeClass('css-bar-'+ parseInt((parseInt((index*10))+parseInt(10))));
+										//$('.counter_bar').addClass('css-bar-'+index*10);
+										//$('.make_message').html(index);
+										playAllNotes(--index);
+										if(index<0){
+											//$('.make_message').html(json['message']);
+										}
+									}, 200);
+
+								}
+
+							}*/
+
+							$('.make_message').html('<div data-label="10" class="m-t-40 text-center css-bar m-b-0 css-bar-warning counter_bar css-bar-100"></div>');
+							playAllNotes(9);
+							function playAllNotes(index) {
+								if(-1 < index) {
+									setTimeout(function() {
+										$('.counter_bar').attr('data-label',index);
+
+										$('.counter_bar').removeClass('css-bar-'+ parseInt((parseInt((index*10))+parseInt(10))));
+										$('.counter_bar').addClass('css-bar-'+index*10);
+										//$('.make_message').html(index);
+										playAllNotes(--index);
+										if(index<0){
+                      $('.make_message_username').html('');
+											$('.make_message').html(json['message']);
+										}
+									}, 1000);
+
+								}
+
+							}
+
+							<!-- $('.make_message').html(''); -->
+							<!-- $('.make_message').html(json['winner']); -->
+
+
+						},
+						error: function(xhr, ajaxOptions, thrownError) {}
+					});
+				}
+				else{
+					$('.winner_div').addClass('has-danger');
+				}
+			});
+
+
+		});
+
+
+        $( document ).ready(function() {
+
+			$('.get_comments').on("click", function() {
+
+				$('.new_insta_form_card').removeClass('has-danger');
+				$('.insta_message').removeClass('alert alert-danger');
+
+				var insta_url = $('#insta_url').val();
+
+				if(insta_url!=''){
+
+				    $.ajax({
+						url: './index.php?page=dashboard/footer/getNewComments',
+						type:'post',
+						data:{'insta_url':insta_url},
+						dataType: "json",
+						beforeSend:function(){
+							$('.get_comments').hide();
+							$('.insta_message').html('<span class="right-side-toggle "><i class="ti-reload text-dark"></i></span>');
+							$('.insta_message1').addClass('alert alert-success');
+							$('.insta_message1').html('İşlem başlatılıyor. Lütfen bekleyin...');
+						},
+						success: function(json) {
+
+							if(json['error']!=''){
+								$('.insta_message1').hide();
+								$('.insta_message').html('');
+								$('.insta_message').addClass('alert alert-danger');
+								$('.insta_message').html(json['error']);
+
+							}else{
+								setTimeout(function(){
+									window.location.href = '/dashboard';
+								}, 1000);
+							}
+
+						},
+            error : function(xhr, textStatus, errorThrown ) {
+                //$.ajax(this);
+                return;
+            }
+					});
+				}
+				else{
+					$('.new_insta_form_card').addClass('has-danger');
+				}
+			});
+		});
+
+
+		$('#to-recover').on("click", function() {
+            $("#loginform").slideUp();
+            $("#recoverform").fadeIn();
+        });
+
+		$('.js-switch').each(function() {
+            new Switchery($(this)[0], $(this).data());
+        });
+
+		
+
+		
+
+    </script>
+
+
+
+</html>
